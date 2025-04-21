@@ -4,7 +4,7 @@ import { NextResponse } from "next/server";
 export async function GET(request) {
   const promisePool = mysqlPool.promise()
   const [rows, fields] = await promisePool.query(
-    `SELECT * FROM attractions;`
+    `SELECT * FROM recipe;`
   )
   return NextResponse.json(rows)
 }
