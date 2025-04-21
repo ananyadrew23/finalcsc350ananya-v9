@@ -6,8 +6,7 @@ export default function RecipesPage() {
   const [form, setForm] = useState({ title: '', ingredients: '', steps: '', image_url: '' }) //เก็บค่าจาก input เพื่อสร้างเมนูใหม่
 
   const fetchRecipes = async () => {
-    const res = await fetch('https://finalcsc350ananya-v9.vercel.app/api/recipes')
-
+    const res = await fetch('/api/recipes')
     const data = await res.json()
     setRecipes(data)
   }
@@ -15,7 +14,7 @@ export default function RecipesPage() {
 
   const handleAdd = async (e) => {
     e.preventDefault()
-    await fetch('https://finalcsc350ananya-v9.vercel.app/api/recipes', {
+    await fetch('/api/recipes', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(form)
@@ -26,7 +25,7 @@ export default function RecipesPage() {
   //เมื่อกดปุ่ม “เพิ่ม” → ส่งข้อมูลไปยัง API ด้วย POSTเคลียร์ input แล้วโหลดข้อมูลใหม่ทันที
 
   const handleDelete = async (id) => {
-    await fetch('https://finalcsc350ananya-v9.vercel.app/api/recipes', {
+    await fetch('/api/recipes', {
       method: 'DELETE',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ id })

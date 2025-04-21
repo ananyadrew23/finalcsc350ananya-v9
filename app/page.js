@@ -11,7 +11,7 @@ export default function HomePage() {
       minHeight: '100vh'
     }}>
       <h1 style={{ fontSize: '2.5rem', color: '#006699', marginBottom: '1rem' }}>
-        🍽️ welcome to DelishShare
+        🍽️ ยินดีต้อนรับสู่ DelishShare
       </h1>
       <p style={{ fontSize: '1.2rem', marginBottom: '2rem' }}>
         แหล่งรวมสูตรอาหารแสนอร่อย พร้อมวัตถุดิบและวิธีทำอย่างละเอียด
@@ -26,7 +26,7 @@ export default function HomePage() {
           borderRadius: '0.5rem',
           cursor: 'pointer'
         }}>
-          🍳 view recipe
+          🍳 ดูเมนูอาหารทั้งหมด
         </button>
       </Link>
     </main>
