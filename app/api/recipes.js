@@ -1,4 +1,4 @@
-import { db } from '@/lib/db'
+import { db } from '@/utils/db'
 
 export default async function handler(req, res) {
   const method = req.method
