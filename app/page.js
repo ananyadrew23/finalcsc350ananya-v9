@@ -15,7 +15,7 @@ export default function HomePage() {
         <h1 className="text-5xl font-extrabold text-blue-800 mb-6">Welcome to the Recipe App</h1>
         <p className="text-lg text-blue-600 mb-8">รวมเมนูอาหารแสนอร่อยให้คุณลองทำเองที่บ้าน 🍳</p>
         <Link href="/recipes" className="bg-blue-600 text-white px-6 py-3 rounded shadow hover:bg-blue-700 transition">
-          ดูเมนูอาหารทั้งหมด
+        เมนูอาหารทั้งหมด
         </Link>
       </div>
     </main>
